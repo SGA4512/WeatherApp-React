@@ -1,0 +1,54 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Martel:700,400);
+
+body *{
+  font-family: Lato, sans-serif
+}
+
+html body {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 26px;
+  font-family: Lato, sans-serif;
+  color: #595959
+}
+  
+input {
+    border: 1px solid #999;
+    padding: 0.5rem;
+    width: 300px;
+}
+  
+  .no-suggestions {
+    color: #999;
+    padding: 0.5rem;
+  }
+  
+  .suggestions {
+    border: 1px solid #c1c1c1;
+    border-top-width: 0;
+    list-style: none;
+    margin-top: 0;
+    max-height: 200px;
+    overflow-y: auto;
+    padding-left: 0;
+    width: 100%;
+    margin-top: -15px;
+  }
+  
+  .suggestions li {
+    padding: 5px 15px;
+    font-size: 14px;
+  }
+  
+  .suggestion-active,
+  .suggestions li:hover {
+    background-color: #c1c1c1;
+    color: #000;
+    cursor: pointer;
+    font-weight: 700;
+  }
+  
+  .suggestions li:not(:last-of-type) {
+    border-bottom: 1px solid #999;
+  }
